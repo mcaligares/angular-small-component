@@ -1,0 +1,7 @@
+.component-list {
+  padding: 5px;
+  .component-body {
+    padding: 0 30px;
+    background-color: lighten($primary, 50);
+  }
+}

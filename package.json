@@ -2,7 +2,7 @@
   "name": "small-component",
   "version": "0.0.1",
   "description": "",
-  "main": "dist",
+  "main": "src/small-component-lib.module.ts",
   "scripts": {
     "build": "tsc"
   },

@@ -1,7 +1,45 @@
-.component-list {
-  padding: 5px;
-  .component-body {
-    padding: 0 30px;
+.small-list {
+  @extend .component-list;
+  .small-header {
+    @extend .component-header;
+    background-color: $primary;
+    &__title {
+      @extend .component-header__title;
+      color: lighten($primary, 50);
+    }
+    &__search {
+      @extend .component-header__search;
+      input {
+        background-color: lighten($primary, 50);
+        &:focus {
+          outline: lighten($primary, 20) auto 5px;
+        }
+      }
+    }
+  }
+  .small-body {
+    @extend .component-body;
     background-color: lighten($primary, 50);
+    .small-item {
+      @extend .component-item;
+      padding-bottom: 15px;
+      border-bottom: 1px solid darken($primary, 5);
+      .small-item-content {
+        &__title {
+          color: darken($primary, 5);
+          text-transform: capitalize;
+          font-size: $component-item-title-size;
+        }
+        &__link {
+          color: $primary;
+          font-style: italic;
+          text-decoration: underline;
+        }
+      }
+      .small-item-picture {
+        padding: 5px;
+        @include hideForMobileScreen;
+      }
+    }
   }
 }

@@ -1,0 +1,30 @@
+<div class="small-list">
+
+  <div class="small-header">
+    <h1 class="small-header__title">
+      some small
+    </h1>
+    <div class="small-header__search">
+      <input type="text" placeholder="Search...">
+    </div>
+  </div>
+
+  <div class="small-body">
+    <div class="small-item" *ngFor="let item of items; let i = index">
+      <div class="small-item-content">
+        <h3 class="small-item-content__title">
+          item title {{i}}
+        </h3>
+        <p class="small-item-content__description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quia excepturi officiis assumenda soluta doloribus, illum possimus cumque esse pariatur optio.
+        </p>
+        <a class="small-item-content__link" href="#">
+          Source {{i}}
+        </a>
+      </div>
+      <div class="small-item-picture">
+        <img src="https://via.placeholder.com/100" alt="image"/>
+      </div>
+    </div>
+  </div>
+</div>

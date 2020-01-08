@@ -7,7 +7,7 @@ var SmallComponentLibComponent = /** @class */ (function () {
     SmallComponentLibComponent = __decorate([
         Component({
             selector: 'lib-small-component',
-            templateUrl: 'small-component-lib.html',
+            templateUrl: './small-component-lib.html',
             encapsulation: ViewEncapsulation.None
         })
     ], SmallComponentLibComponent);
